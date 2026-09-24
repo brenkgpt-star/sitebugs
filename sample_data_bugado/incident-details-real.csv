@@ -1,5 +1,22 @@
 module,description,date
 garantiu_bugado,SQL injection em release_history_bugado via nome da release,2026-09-20
 garantiu_bugado,XSS armazenado no dashboard via nome do repo,2026-09-21
+garantiu_bugado,pesos do scoring somam 1.5 em vez de 1.0,2026-09-21
+garantiu_bugado,divisao por zero em normalize_across_modules,2026-09-20
+garantiu_bugado,command injection em git_reader_bugado via shell True,2026-09-19
+garantiu_bugado,eval em resolve_comparison_base com input do usuario,2026-09-19
+garantiu_bugado,token hardcoded exposto no log,2026-09-18
+garantiu_bugado,pickle.loads em dado de usuario permite RCE,2026-09-18
+garantiu_bugado,XXE em parse_junit_report com entidade externa,2026-09-17
+garantiu_bugado,SSRF em prepare_repository aceita qualquer URL,2026-09-17
 src,senha em texto puro no localStorage do LoginBugado,2026-09-22
+src,XSS via dangerouslySetInnerHTML no DashboardBugado,2026-09-22
+src,href javascript com alert no nome do release,2026-09-21
+src,token fixo na URL vaza em log e referrer,2026-09-21
+src,DELETE sem confirmacao e sem auth no ReleaseDetail,2026-09-20
+src,atribuicao em vez de comparacao libera login,2026-09-20
+src,GET com senha na query string fica no historico,2026-09-19
 app_bugado.py,RCE em tela_conectar via git path com shell True,2026-09-23
+app_bugado.py,botao APAGAR TUDO sem confirmacao remove o banco,2026-09-23
+app_bugado.py,listagem de arquivos do servidor exposta no Admin,2026-09-22
+app_bugado.py,brute force liberado no login sem rate limit,2026-09-22
