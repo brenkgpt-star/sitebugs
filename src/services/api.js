@@ -1,4 +1,5 @@
 // BUG 1: baseURL http (não https) + porta errada em produção
+// corrige: token na query string documentado, ainda aberto
 // BUG 2: token fixo no código + vai via query string (loga em tudo)
 // BUG 3: sem timeout, sem retry, sem tratar 401/403/500
 // BUG 4: POST sem Content-Type JSON (vira text/plain e o Flask lê values mesmo assim)
