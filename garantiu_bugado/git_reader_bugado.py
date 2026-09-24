@@ -1,4 +1,5 @@
 """Git reader bugado — espelha garantiu/git_reader.py com bugs intencionais."""
+# fix: command injection via shell=True documentado
 import os
 import subprocess
 
