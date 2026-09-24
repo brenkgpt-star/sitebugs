@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams, useSearchParams } from 'react-router-dom'
 
 // BUG 1: dois sources of truth (params + searchParams) divergem
+// fix: IDOR via score na URL documentado
 // BUG 2: score vindo da URL (query param) em vez do backend = IDOR + tampering
 export default function ReleaseDetail() {
   const { id } = useParams()
