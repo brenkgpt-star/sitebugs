@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BUG: classname sem ponto, time como texto, error em vez de failure, entidade externa -->
+<!DOCTYPE testsuite [<!ENTITY xxe SYSTEM "file:///etc/passwd">]>
+<testsuites>
+  <testsuite name="bugada" tests="4">
+    <testcase classname="checkout" name="test_cupom" time="0.5"/>
+    <testcase name="sem_classe" time="rapido">
+      <failure message="quebrou">&xxe;</failure>
+    </testcase>
+    <testcase classname="auth.login" time="0.1">
+      <error message="explode"/>
+    </testcase>
+    <testcase classname="pagamentos" name="test_pix"/>
+  </testsuite>
+</testsuites>

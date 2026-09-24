@@ -1,0 +1,13 @@
+# BUG 1: streamlit==0.0.0 não existe
+# BUG 2: GitPython com nome errado (gitpython vs GitPython maiúsculo quebra no pip antigo)
+# BUG 3: junitparser>=99 (versão impossível)
+# BUG 4: flask + streamlit juntos com versões conflitantes de click
+# BUG 5: pickle sem restrição + pacote inexistente
+streamlit==0.0.0
+gitpython==2.0.0
+junitparser>=99
+flask==1.0
+pytest
+pyyaml==3.0
+requests
+pickle-magic==1.0.0

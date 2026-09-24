@@ -1,0 +1,4 @@
+module,description,date
+checkout,"cupom com vírgula, quebra o split",2026-13-45
+auth,token vazado no log,31/02/2026
+pagamentos,charge dupla,2026-09-01

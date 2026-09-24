@@ -1,6 +1,19 @@
-# SiteBugs 🐛 - Loja intencionalmente CHEIA DE BUGS
+# SiteBugs 🐛 - Loja + Garantiu Bugado (INTENCIONALMENTE CHEIO DE BUGS)
 
 > ⚠️ Este projeto foi criado de propósito com dezenas de erros para treinar debug, code review e ferramentas de análise estática.
+
+## Parte 2 — Garantiu Bugado (site maior, baseado em bernardohorn/garantiu)
+
+Análise real do repo original em `ANALISE-GARANTIU.md` (15 bugs/fragilidades captados).
+Versão maior e bugada aqui:
+- `app_bugado.py` — Streamlit 9 telas (Login + 7 do original + Admin), 30+ bugs. Rode com `streamlit run app_bugado.py`
+- `garantiu_bugado/` — 10 módulos espelhando os originais, cada um com 10+ bugs (SQLi, RCE, SSRF, XXE, pickle, MD5, hardcoded secrets)
+- `src/pages/` + `src/services/` — frontend React maior (Dashboard, ReleaseDetail, Login) com 20+ bugs
+- `sample_data_bugado/` — CSVs/XMLs malformados
+- `requirements-bugado.txt` — dependências impossíveis/conflitantes
+- Instalar: `pip install -r requirements-bugado.txt` (vai falhar de propósito)
+
+## Parte 1 — Loja bugada (React)
 
 ## Como rodar (vai quebrar mesmo)
 ```bash

@@ -3,3 +3,10 @@ dist
 build
 .env
 .env.local
+sitebugs-bundle.zip
+.venv
+__pycache__
+*.pkl
+garantiu.db
+garantiu_test_history.db
+garantiu_release_history.db
