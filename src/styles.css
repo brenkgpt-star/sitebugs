@@ -1,0 +1,44 @@
+/* BUG 1: seletor errado (.app-container vs .appContainer) */
+/* BUG 2: unidade faltando (width: 100 sem px) */
+/* BUG 3: cor com hex inválido */
+/* BUG 4: !important abusivo + z-index gigante */
+/* BUG 5: * margin/padding reset sem box-sizing */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.appContainer {
+  width: 100;
+  background-color: #zzzzzz !important;
+  position: absolute;
+  z-index: 9999999;
+}
+
+/* BUG 6: classe .topo definida duas vezes com conflito */
+.topo {
+  display: flex;
+  color: red;
+}
+.topo {
+  display: block;
+  color: blue;
+}
+
+/* BUG 7: media query com sintaxe errada */
+@media (max-width 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+}
+
+/* BUG 8: id duplicado e animação infinita pesada */
+#botao #botao {
+  animation: pisca 0.1s infinite;
+}
+
+@keyframes pisca {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
