@@ -1,4 +1,5 @@
 """Release history bugado — espelha garantiu/release_history.py com SQL injection e mais."""
+# fix: histórico de correções iniciada (bug SQL injection documentado, ainda aberto)
 import sqlite3
 import pickle
 import os
