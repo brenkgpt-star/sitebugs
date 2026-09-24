@@ -1,4 +1,5 @@
 """Auth + API bugados — 2 telas extras (Login e Admin)."""
+# corrige: pickle em cookie documentado, ainda aberto
 import hashlib
 import pickle
 from flask import Flask, request, jsonify
