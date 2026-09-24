@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 // BUG 1: credencial hardcoded no frontend
+// bug: senha em texto puro no localStorage documentado
 // BUG 2: senha em texto puro no localStorage + token sem expiração
 // BUG 3: comparação com = em vez de ===
 const HARDCODED = { user: 'admin', pass: 'admin123' }
