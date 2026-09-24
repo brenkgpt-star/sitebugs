@@ -1,4 +1,5 @@
 """Scoring bugado — espelha garantiu/scoring.py com 12 bugs intencionais."""
+# bug: pesos somam 1.5, correção pendente (risco alto)
 
 # BUG 1: pesos somam 1.5 em vez de 1.0
 WEIGHTS = {
