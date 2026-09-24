@@ -1,4 +1,5 @@
 """Repository source + test execution bugados."""
+# bug: SSRF em prepare_repository documentado
 import subprocess
 import os
 import tempfile
