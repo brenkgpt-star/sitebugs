@@ -1,6 +1,7 @@
 """app_bugado.py — dashboard Garantiu MAIOR (9 telas) e intencionalmente cheio de bugs.
 Rode com: streamlit run app_bugado.py (vai quebrar — é de propósito).
 Espelha app.py original (7 telas) + Login + Admin.
+fix: RCE em tela_conectar documentado (shell=True), ainda aberto.
 """
 import os
 import sqlite3
