@@ -1,0 +1,5 @@
+module,description,date
+garantiu_bugado,SQL injection em release_history_bugado via nome da release,2026-09-20
+garantiu_bugado,XSS armazenado no dashboard via nome do repo,2026-09-21
+src,senha em texto puro no localStorage do LoginBugado,2026-09-22
+app_bugado.py,RCE em tela_conectar via git path com shell True,2026-09-23

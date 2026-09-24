@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="sitebugs" tests="9" failures="5" errors="1" skipped="1">
+    <testcase classname="garantiu_bugado.test_auth" name="test_login_invalido" time="0.4">
+      <failure message="XSS não escapado">assert escapar(nome) falhou</failure>
+    </testcase>
+    <testcase classname="garantiu_bugado.test_scoring" name="test_peso_soma_um" time="0.2">
+      <failure message="pesos somam 1.5">assert sum(weights) == 1.0</failure>
+    </testcase>
+    <testcase classname="garantiu_bugado.test_release" name="test_sql_injection" time="0.3">
+      <failure message="query com f-string">injection detectada</failure>
+    </testcase>
+    <testcase classname="garantiu_bugado.test_git" name="test_shell_injection" time="0.5">
+      <error message="shell=True com input">command injection possível</error>
+    </testcase>
+    <testcase classname="src.test_dashboard" name="test_xss_dashboard" time="0.3">
+      <failure message="dangerouslySetInnerHTML">html sem escape</failure>
+    </testcase>
+    <testcase classname="src.test_login" name="test_senha_localstorage" time="0.2">
+      <failure message="senha em texto puro">localStorage com senha</failure>
+    </testcase>
+    <testcase classname="app_bugado.test_conectar" name="test_rce_conectar" time="0.6">
+      <failure message="subprocess com input">RCE via repo path</failure>
+    </testcase>
+    <testcase classname="app_bugado.test_admin" name="test_apagar_banco" time="0.1">
+      <skipped message="teste pulado"/>
+    </testcase>
+    <testcase classname="garantiu_bugado.test_quality" name="test_xxe" time="0.2"/>
+  </testsuite>
+</testsuites>
