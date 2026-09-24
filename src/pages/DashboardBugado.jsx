@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
 // BUG 1: import de serviço com nome errado (api vs Api)
+// corrige: XSS via dangerouslySetInnerHTML documentado, ainda aberto
 // BUG 2: componente faz fetch + calcula score + renderiza tudo (god component)
 import { getReleases, registrarDecisao } from '../services/api'
 
