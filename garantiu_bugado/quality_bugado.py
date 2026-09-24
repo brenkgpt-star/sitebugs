@@ -1,4 +1,5 @@
 """Bug history / incidents / test_reports bugados."""
+# fix: XXE em parse_junit_report documentado
 import re
 import xml.etree.ElementTree as ET
 
